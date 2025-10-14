@@ -1,0 +1,48 @@
+
+
+.nav-container{
+    color: aqua;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+
+}
+.logo-con{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    cursor: pointer;
+}
+.li-container{
+    margin-top: 4px;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    cursor: pointer;
+}
+.searchInput{
+    padding: 4px;
+    border: 2px solid cyan;
+    border-radius:1.5rem;
+}
+.searchButton{
+    padding: 3px;
+    border: 1px solid cyan;
+    border-radius:1rem;
+    background-color: black;
+}
+.inp{
+    background-color:black;
+    border: none;
+    color: white;
+}
+.login{
+    background-color: black;
+    color: cyan;
+    padding: 8px;    border: 2px solid goldenrod;
+    border-radius: 20px;
+    cursor: pointer;
+}
