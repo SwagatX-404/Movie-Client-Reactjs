@@ -2,8 +2,9 @@ import React from 'react'
 import './Hero.css';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faCircle, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+
 
 const Hero = ({movies =[]}) => {
   return (

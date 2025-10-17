@@ -1,3 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
 .movie-carosel-container{
     width: 100vw;
     background-color: black;

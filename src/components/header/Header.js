@@ -1,43 +1,48 @@
-import React from 'react'
-import './Header.css';
-import mov from './mov.png'    // import your image (since it’s in the same folder)
+import React, { useState } from "react";
+import "./Header.css";
+import mov from "./mov.png";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div>
-        <nav className='nav-container'>
-              <div className='logo-con'>
-                  {/* <img src={mov} alt="Movie Logo" className="logo" width="50px" /> */}
-                  <h2>M◉VIES</h2>
-              </div>
-              <div>
-                <ul className='li-container'>
-                    <li>HOME</li>
-                    <li>MOVIES</li>
-                    <li>TV SHOWS</li>
-                </ul>
-              </div>
-              <div>
-                <div className='li-container'>
-                    <div>
-                      <div class="searchInput">
-                            <input className = 'inp' type="text" name="" placeholder="Search"/>
-                        <button class="searchButton" href="#"> 
-                               &#128269;
-                      </button>
-                      </div>
-                      
-                    </div>
-                   <div className='login'>
-                    <div>LOG IN</div>
-                   </div>
+    <header className="navbar">
+      {/* Left - Logo */}
+      <div className="logo-section">
+        <img src={mov} alt="Movie Logo" className="logo" />
+        <h2 className="title">M◉VIES</h2>
+      </div>
 
-                </div>
-              </div>
+      {/* Hamburger (mobile) */}
+      <button
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        ☰
+      </button>
 
-        </nav>
-    </div>
-  )
-}
+      {/* Center + Right */}
+      <div className="l-nav
+      ">
+      <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <ul className="nav-menu">
+          <li>HOME</li>
+          <li>MOVIES</li>
+          <li>TV SHOWS</li>
+        </ul>
 
-export default Header
+        <div className="search-login">
+          <div className="searchInput">
+            <input className="inp" type="text" placeholder="Search" />
+            <button className="searchButton">&#128269;</button>
+          </div>
+          <button className="login-btn">LOG IN</button>
+        </div>
+      </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
