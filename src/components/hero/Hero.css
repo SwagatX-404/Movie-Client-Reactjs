@@ -51,3 +51,50 @@ html, body {
   text-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
 }
 
+.movie-buttons-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 300px;
+    
+}
+.play-button-icon-container {
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+}
+
+.play-button-icon{
+    padding: 0px;
+    margin: 0px;
+    color: gold;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.play-button-icon:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+    .movie-detail{
+        flex-direction: column;
+        top: 150px;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .movie-title h4 {
+      font-size: 1.2rem;
+    }
+    .movie-buttons-container{
+        width: 200px;
+        
+    }
+    .play-button-icon-container {
+        margin-left: 4.6rem;
+    }
+
+}
