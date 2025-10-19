@@ -11,6 +11,7 @@ const Header = () => {
       <div className="logo-section">
         <img src={mov} alt="Movie Logo" className="logo" />
         <h2 className="title">M◉VIES</h2>
+        
       </div>
 
       {/* Hamburger (mobile) */}
